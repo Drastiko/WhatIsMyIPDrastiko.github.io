@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css" rel="stylesheet"/>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>¿Cual es mi IP?</title>
+</head>
+<body>
+    <header>
+        <h1 id="logo"><ion-icon name="location-outline" id="icono"></ion-icon> My IP Location - Drastiko</h1>
+    </header>
+    <div class="container">
+        <div class="titulo">
+            <h1 id="presentacion">¿Cual es mi IP?</h1>
+        </div>
+        <h2 id="presentacion">Al presionar podras conocer tu direccion IP, adenas de conocer la ubicacion de esta</h2>
+        <div class="contenedor-btn">
+            <button type="button" id="btn-primary">Conocer IP</button>
+        </div>
+    </div>
+    <div class="contenedor-resultado">
+        <div class="descripcion-ip">
+            <h1 id="ip-titulo">Tu IP privada es:</h1>
+            <div class="ip">
+                <label id="direccion-privada">Ejemplo: 192.168.0.1</label>
+            </div>
+        </div>
+        <div class="descripcion-ip">
+            <h1 id="ip-titulo">Tu IP pública es:</h1>
+            <div class="ip">
+                <label id="direccion-publica">Ejemplo: 203.0.113.1</label>
+            </div>
+        </div>
+        <div class="descripcion-ip">
+            <h1 id="ip-titulo">Tu Ubicacion es:</h1>
+            <div class="ip">
+                <label id="ubicacion">Ubicacion: Desconocida</label>
+            </div>
+        </div>
+        <h1 id="ip-titulo">Ubicación</h1>     
+    </div>
+    <div class="contenedor-mapa">
+        <div id="map"></div>
+    </div> 
+    <footer>
+        <p>&copy;Drastiko - 2023, todos los derechos reservado</p>
+        <div class="icon-footer">
+            <a href="https://www.instagram.com/reel/CwJJ1gTBBuF/?igshid=MzRlODBiNWFlZA==" id="ig"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="https://www.facebook.com/johandavid.veasuwu" id="fb"><ion-icon name="logo-facebook"></ion-icon></a>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

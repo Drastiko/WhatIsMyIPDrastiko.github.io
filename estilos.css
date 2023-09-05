@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to left, #141414, #3271f8);
+}
+#icono {
+    color: rgb(151, 0, 0);
+}
+#logo{
+    padding: 10px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+    
+}
+body{
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    margin-top: 60px;
+    background-size: cover;
+    background-position: center;
+    background: url(/fondo.png), #0d7ae0;
+    background: url(/fondo.png), -webkit-gradient(linear, right top, left top, from(#141414), to(#3271f8));
+    background: url(/fondo.png), linear-gradient(to left, #141414, #3271f8)
+}
+.titulo{
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contenedor-btn {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btn-primary {
+    width: 250px;
+    padding: 5px;
+    height: 35px;
+    background-color: #0d7ae0;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+}
+#btn-primary:hover{
+    background-color: #1f85d8;
+    cursor: pointer;
+}
+
+#presentacion{
+    font-size: 24px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+.contenedor-resultado {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to left, #141414, #3271f8);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 20px; /* Espacio entre las secciones de IP */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Añadimos una sombra para resaltar el contenedor */
+}
+
+.descripcion-ip {
+    text-align: center;
+}
+
+/* Estilos para los títulos "Tu IP es" */
+#ip-titulo {
+    font-size: 24px;
+    padding: 10px;
+    color: white;
+    margin-bottom: 10px; /* Espacio entre el título y la dirección IP */
+}
+
+.ip label {
+    font-size: 20px; 
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente para resaltar la dirección IP */
+    padding: 10px;
+    border-radius: 5px; /* Agregamos bordes redondeados */
+}
+.contenedor-mapa {
+    width: 100%;
+    margin: 0 auto;
+    height: 50vh;
+    padding: 10px;
+    background: linear-gradient(to left, #141414, #3271f8);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+#map {
+    width: 70%;
+    height: 100%;
+    border-radius: 5px; 
+}
+
+footer {
+    background:  linear-gradient(to left, #141414, #3271f8);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+.icon-footer {
+    margin-top: 10px;
+}
+
+.icon-footer a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+#fb:hover {
+    color: #1877f2; /* Cambia el color al pasar el cursor */
+}
+
+/* Estilos para el hover del ícono de Instagram */
+#ig:hover {
+    color: #bc2a8d; /* Cambia el color al pasar el cursor */
+}
+
+
+ion-icon {
+    vertical-align: middle;
+}
